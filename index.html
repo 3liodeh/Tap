@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        .page-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            border: 5px solid #3BBADB;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .navbar {
+            background-color: white;
+            padding: 30px;
+            text-align: right;
+        }
+
+        .navbar a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .navbar a i {
+            margin-right: 5px;
+        }
+
+        .content-container {
+            justify-content: center;
+            display: flex;
+            padding: 20px;
+            flex-wrap: wrap; 
+        }
+
+        .text-container {
+            margin-right: 20px; 
+            flex: 1;
+        }
+
+        .centered-image {
+            flex: 1; 
+            text-align: center;
+        }
+
+        .centered-image img {
+            max-width: 100%;
+            height: auto; 
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #888888;
+        }
+
+        .buttons-container {
+            margin-top: 20px; 
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .action-button {
+            padding: 10px 20px;
+            background-color: #008AAA;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+       
+        @media only screen and (max-width: 600px) {
+            .navbar {
+                padding: 10px; 
+            }
+
+            .content-container {
+                padding: 10px; 
+            }
+
+            .text-container {
+                margin-right: 0; 
+            }
+
+            .centered-image {
+                margin-top: 20px; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-container">
+        <div class="navbar">
+            <a href="#" title="home"><i class="material-icons">home</i>Home</a>
+            <a href="#" title="Account"><i class="material-icons">account_circle</i>About me</a>
+            <a href="#" title="Contact Me"><i class="material-icons">call</i>Contact me</a>
+        </div>
+
+        <div class="content-container">
+            <div class="text-container">
+                <h3 style="color: #3BBADB;">Welcome to my site</h3>
+                <h2 style="color: #008AAA;">Hi, I'm Ali, an AI developer</h2>
+                <article>Hello, I am a fresh graduate in computer science from Mu'tah University. I have a strong foundation in computer science as well as an artificial intelligence developer</article>
+                <div class="buttons-container">
+                    <button class="action-button">Hire me</button>
+                    <button class="action-button">See My Project</button>
+                </div>
+            </div>
+            <div class="centered-image">
+                <img src="https://static.pexels.com/photos/36753/flower-purple-lical-blosso.jpg">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
